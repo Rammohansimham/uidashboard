@@ -1,0 +1,417 @@
+body.dashboard {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafb;
+  min-height: 100vh; 
+}
+
+.dashboard {
+  margin: 120px auto;
+  /* background-color: #f9fafb; */
+  gap: 28px;
+  display:flex;
+  flex-direction: column;
+  opacity: 1;
+  min-height: 100vh; 
+}
+
+.header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.stat {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+}
+
+.location, .products, .sales {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 8px;
+  text-align: left;
+}
+
+.pie-chart, .bar-chart, .line-chart {
+  height: 200px;
+  background-color: #e3f2fd;
+  border-radius: 8px;
+}
+
+.stats-container {
+  width: 500px;
+  margin-left: -280px;
+  margin-top: -50px;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card.positive {
+  background-color: #eaf6ff;
+}
+
+.stat-card.negative {
+  background-color: #fff4f4;
+}
+
+.stat-title {
+  font-size: 14px;
+  color: #888;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.stat-growth {
+  font-size: 14px;
+  color: #555;
+}
+
+.stat-growth .arrow {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.stat-growth.positive {
+  color: #4caf50;
+}
+
+.stat-growth.negative {
+  color: #f44336;
+}
+
+:root {
+  --primary-light: rgba(247, 249, 251, 1);
+  --padding: 24px;
+  --gap: 16px;
+  --border-radius: 16px;
+}
+
+.chart-card {
+  width: 450px;
+  min-width: 400px;
+  height: 280px;
+  margin-left: 300px;
+  margin-top: -350px;
+  background: var(--primary-light);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.chart-title {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.chart-container {
+  flex: 1;
+  
+  position: relative;
+}
+
+.chart-card1 {
+  width: 600px;
+  
+  height: 280px;
+  margin-left: -280px;
+  
+  background: var(--primary-light);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.chart-title1 {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.legend-label1 {
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+}
+.chart-container1{
+  width: -300px;
+  height: 400px;
+}
+.location-card {
+  width: 220px;
+  margin-left: 500px;
+  max-width: 272px;
+  margin-top: -350px;
+  padding: 24px;
+  background: rgba(247, 249, 251, 1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.world-map {
+  position: relative;
+  height: 120px;
+  background: transparent;
+}
+
+.world-map img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.marker {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+}
+
+.marker-new-york {
+  top: 30%;
+  left: 45%;
+}
+
+.marker-san-francisco {
+  top: 35%;
+  left: 20%;
+}
+
+.marker-sydney {
+  bottom: 15%;
+  right: 25%;
+}
+
+.marker-singapore {
+  bottom: 10%;
+  right: 35%;
+}
+
+.location-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.location-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.location-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.city-name {
+  color: #333;
+  font-weight: 500;
+}
+
+.revenue {
+  color: #333;
+  font-weight: bold;
+}
+
+.revenue-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(200, 200, 200, 0.5);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #3599f3;
+  border-radius: 2px;
+}
+.sales-card {
+  width: 260px;
+  padding: 24px;
+  margin-left: 500px;
+  margin-top: -20px;
+  background: rgba(247, 249, 251, 1);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  text-align: left;
+}
+
+.chart-container2 {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.chart-center {
+  position: absolute;
+  left: 20px;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sales-list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 10px; /* Space between rows and columns */
+}
+
+.sales-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between dot and text */
+  font-size: 14px;
+  color: #333;
+}
+
+.sales-item .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.sales-item .dot.black {
+  background-color: #000000;
+}
+
+.sales-item .dot.green {
+  background-color: #83E6C7;
+}
+
+.sales-item .dot.purple {
+  background-color: #B1C3FF;
+}
+
+.sales-item .dot.blue {
+  background-color: #A6D8FF;
+}
+/* Card container */
+.top-selling-card {
+  width: 662px; /* Matches provided dimensions */
+  min-width: 662px;
+  margin-left: -800px;
+  margin-top: -400px;
+  height: auto;
+  padding: 24px;
+  background: rgba(247, 249, 251, 1); /* Light background */
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Card title */
+.card-titles1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+/* Table styling */
+.top-selling-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.top-selling-table th {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd; /* Divider for the header */
+}
+
+.top-selling-table td {
+  font-size: 14px;
+  color: #333333;
+  padding: 12px 0;
+}
+
+.top-selling-table tr:not(:last-child) td {
+  border-bottom: 1px solid #ddd; /* Divider for rows */
+}
+
+/* Hover effect for rows */
+.top-selling-table tbody tr:hover {
+  background-color: #f1f3f5; /* Light hover background */
+}

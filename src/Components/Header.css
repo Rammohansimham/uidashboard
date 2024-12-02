@@ -1,0 +1,113 @@
+/* Global Body Styling */
+
+/* Container for the Header */
+.header-container-juspay {
+  background: #171717; /* Background color */
+ 
+  height: 100vh; /* Full screen height */
+  position: relative;
+}
+
+/* Header Styling */
+.header-juspay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Button Styling */
+.button {
+  position: absolute;
+  width: 357px;
+  height: 81px;
+  top: 120px;
+  left: 180px;
+  background: #FFBB37;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-text {
+  font-family: 'Space Mono', monospace;
+  font-size: 30.42px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+.header-title {
+  position: absolute;
+  top: 321px;
+  left: 180px;
+  font-size: 128px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* Company Name Styling */
+.company-name {
+  position: absolute;
+  top: 815px;
+  left: 180px;
+  font-family: 'Space Mono', monospace;
+  font-size: 36px;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+/* Juspay Technologies Private Limited Styling */
+.company-details {
+  position: absolute;
+  top: 885px;
+  left: 180px;
+  font-family: 'Space Mono', monospace;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+/* Grid Overlay Styling */
+.grid-overlay {
+  width: 714px;
+  height: 714px;
+  position: absolute;
+  top: 10px;
+  left: 51px;
+  opacity: 0.1;
+  background: 
+    radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 30%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 4px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.5) 3px, transparent 4px);
+  background-size: 50px 50px;
+  clip-path: circle(43% at 50% 50%);
+}
+
+/* Ellipse Styling */
+.ellipse1 {
+  position: absolute;
+  bottom: -30%;
+  left: 977px;
+  width: 706.13px;
+  height: 50vh;
+  opacity: 0.8;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(162, 135, 244, 1) 50%, rgba(0, 0, 0, 0) 130%);
+  backdrop-filter: blur(120px);
+  clip-path: ellipse(50% 27% at 50% 100%);
+  z-index: -1;
+}
+
+.circle1 {
+  width: 507.79px;
+  height: 507.79px;
+  top: -318.25px;
+  left: 454px;
+  opacity: 0.8;
+  transform: rotate(22.69deg);
+  background: linear-gradient(45deg, rgba(18, 230, 200, 1) 10%, rgba(0, 0, 0, 0.8) 100%);
+  border-radius: 50%;
+  position: absolute;
+  clip-path: ellipse(27% 30% at 33% 52%);
+}

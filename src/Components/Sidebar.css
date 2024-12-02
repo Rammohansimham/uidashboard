@@ -1,0 +1,214 @@
+:root {
+    --20: 20px;
+    --16: 16px;
+    --black-10: rgba(28, 28, 28, 0.1);
+  }
+  
+  .sidebar {
+    width: 212px; /* Fixed width */
+    height: 1206px; /* Fixed height */
+    padding: var(--20) var(--16) var(--20) var(--16); /* Padding values */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    gap: var(--16); /* Spacing between elements */
+    border: 0; /* Reset all borders */
+    border-right: 1px solid var(--black-10); /* Right border */
+    background-color: #f5f5f5; /* Example background color */
+    opacity: 1; /* Fully visible */
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-list li {
+    margin: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .sidebar-list li:hover {
+    color: #007bff; /* Highlight on hover */
+  }
+  .profile-section {
+    width: 180px; /* Fill */
+    height: 32px; /* Hug */
+    padding: var(--4); /* Padding */
+    display: flex;
+    align-items: center;
+    gap: var(--8); /* Gap between icon and name */
+    border-radius: var(--8); /* Rounded corners */
+    background-color: #ffffff; /* Background for profile section */
+    opacity: 1; /* Fully visible */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+  }
+  
+  .profile-icon {
+    width: 32px; /* Icon size */
+    height: 32px; /* Icon size */
+    border-radius: 50%; /* Circular icon */
+    object-fit: cover; /* Ensure the image scales well */
+  }
+  
+  .profile-name {
+    font-size: 1rem; /* Adjust font size */
+    font-weight: 500; /* Slightly bold for better readability */
+    color: #333; /* Text color */
+  }
+  .box-section {
+    width: 180px; /* Fill */
+    height: auto; /* Adjust height dynamically */
+    padding: 0px 0px var(--12) 0px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--4);
+    background-color: #ffffff; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    opacity: 1; /* Fully visible */
+  }
+  
+  .box-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--black-10); /* Divider line */
+  }
+  
+  .heading-item {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .box-content {
+    padding: 8px 12px;
+  }
+  
+  .vertical-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--4); /* Gap between items */
+  }
+  
+  .list-item {
+    font-size: 0.875rem;
+    color: #555;
+    position: relative;
+    padding-left: 16px; /* Space for custom bullet */
+  }
+  
+  .list-item::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #555; /* Bullet color */
+    border-radius: 50%; /* Circular bullet */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .frame-item {
+    display: flex;
+    align-items: center;
+    gap: var(--8); /* Space between arrow, icon, and text */
+    padding: 8px 0;
+    font-size: 0.9rem; /* Text size */
+    color: #555;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .frame-item:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Light hover effect */
+  }
+  
+  .arrow-icon {
+    font-size: 0.75rem; /* Smaller size for arrow icon */
+    color: #888; /* Arrow icon color */
+  }
+  
+  .item-icon {
+    font-size: 1.2rem; /* Item icon size */
+    color: #333;
+  }
+  
+  .item-text {
+    font-weight: 500;
+  }
+  .custom-sidebar {
+    width: 180px;
+    height: 360px;
+    padding: 0px 0px var(--12) 0px;
+    gap: var(--4);
+    opacity: 1;
+    background-color: #f4f4f4;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-frame-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .custom-frame-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .custom-frame-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .custom-arrow-icon {
+    font-size: 0.75rem;
+    color: #888;
+  }
+  
+  .custom-item-icon {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .custom-item-text {
+    font-weight: 500;
+  }
+  
+  .custom-sub-list {
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 8px;
+  }
+  
+  .custom-sub-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    cursor: pointer;
+  }
+  
+  .custom-sub-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  

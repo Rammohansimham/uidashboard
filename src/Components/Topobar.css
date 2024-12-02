@@ -1,0 +1,76 @@
+/* Header Container */
+.header-container {
+    width: 948px;
+    height: 68px;
+    padding: var(--20) var(--28) var(--20) var(--28);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+    background-color: #fff;
+    opacity: 1;
+    position:fixed;
+  }
+  
+  /* Breadcrumb Group */
+  .breadcrumb-group {
+    display: flex;
+    align-items: center;
+    gap: var(--8);
+  }
+  
+  .icon-breadcrumb {
+    display: flex;
+    gap: var(--8);
+  }
+  
+  .breadcrumb-icon {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .breadcrumb-text {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Group for Search Input and Icons */
+  .search-icons-group {
+    display: flex;
+    align-items: center;
+    gap: var(--20); /* Add space between search and icons */
+  }
+  
+  /* Search Input Styling */
+  .search-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 160px;
+    height: 28px;
+    padding: 4px 8px;
+    background-color: rgba(28, 28, 28, 0.05);
+    border-radius: var(--8);
+    border: 1px solid #ccc;
+    opacity: 1;
+  }
+  
+  /* Icons Group */
+  .icons-group {
+    display: flex;
+    gap: var(--8);
+  }
+  
+  .icon {
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    color: #000;
+  }
+  

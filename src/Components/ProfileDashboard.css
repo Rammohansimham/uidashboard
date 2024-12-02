@@ -1,0 +1,149 @@
+.order-list {
+    background-color: #ffffff;
+    margin-top: 80px;
+    border-radius: 16px;
+    width: 1400px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .order-table th,
+  .order-table td {
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .order-table th {
+    background-color: #f7f9fb;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .status-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Common styles for status dot and text */
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-text {
+  font-weight: bold;
+}
+
+/* Specific color styles */
+.blue {
+  color: #007bff;
+  color: #007bff;
+}
+
+.green {
+  color: #28a745;
+  color: #28a745;
+}
+
+.orange {
+  color: #fd7e14;
+  color: #fd7e14;
+}
+
+.yellow {
+  color: #ffc107;
+  color: #ffc107;
+}
+
+.grey {
+  color: #6c757d;
+  color: #6c757d;
+}
+.date-field {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.calendar-icon {
+  font-size: 16px;
+  color: #484949;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.status-menu {
+  cursor: pointer;
+  padding-left: 8px;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 120px;
+  padding: 8px 0;
+}
+
+.dropdown-menu div {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-menu div:hover {
+  background-color: #f0f0f0;
+}
+.left-actions {
+  display: flex;
+  align-items: center;
+}
+
+.right-actions {
+  display: flex;
+  align-items: center;
+}
+
+.add-button,
+.filter-button {
+  margin-right: 10px;
+}
+
+.right-actions {
+  min-width: 200px;
+  margin-left: 1100px;
+  margin-top: -30px;
+}
